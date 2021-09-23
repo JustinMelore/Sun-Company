@@ -1,19 +1,15 @@
+/*HOMEPAGE HERE*/
 body {
   margin: 0px;
 }
 
-#homepageBackground {
-  background-image: url(../images/sunBackground.gif);
-  background-size: 100%;
-}
-
-img {
+#mainLogo {
   width: 100%;
   height: 100%;
 }
 
 div {
-  border: 2px solid black;
+  border: 2px solid green;
 }
 
 #homepageNav {
