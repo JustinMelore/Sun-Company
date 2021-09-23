@@ -4,46 +4,98 @@
 body {
   margin: 0px;
   background-color: black;
-  color: green;
+  color: #2e9e2c;
+}
+
+a {
+  color: #2e9e2c;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #2e9e2c;
+}
+
+a:hover {
+  color: orangered;
 }
 
 /*Section for the navbar styling*/
 #homepageNav {
   display: grid;
-  grid-template-columns: auto 1fr 1fr 1fr 1fr auto;
+  grid-template-columns: 10% 20% 20% 20% 20% auto;
   grid-template-rows: auto;
-  grid-template-areas: 'logo companyName homeLink servicesLink galleryLink orderLink';
-  background-color: white;
+  grid-template-areas: "logo companyName homeLink servicesLink galleryLink orderLink";
+  background-color: #3b3b3b;
+  border-bottom: 3px #2e9e2c double;
 }
 
 .logo {
-  grid-area: 'logo';
+  grid-area: "logo";
   grid-column: 1/2;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
 .companyName {
-  grid-area: 'companyName';
+  grid-area: "companyName";
   grid-column: 2/3;
+  display: grid;
+  justify-items: left;
+  align-items: flex-start;
+  font-family: "Source Code Pro";
+  font-size: 250%;
+  padding-left: 0px;
+  border-right: 3px #2e9e2c solid;
 }
 
 .homeLink {
-  grid-area: 'homeLink';
+  grid-area: "homeLink";
   grid-column: 3/4;
+  border-right: 3px #2e9e2c solid;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-size: 200%;
+  padding: 0px;
 }
 
 .servicesLink {
-  grid-area: 'servicesLink';
+  grid-area: "servicesLink";
   grid-column: 4/5;
+  border-right: 3px #2e9e2c solid;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-size: 200%;
+  padding: 0px;
 }
 
 .galleryLink {
-  grid-area: 'galleryLink';
+  grid-area: "galleryLink";
   grid-column: 5/6;
+  border-right: 3px #2e9e2c solid;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-size: 200%;
+  padding: 0px;
 }
 
 .orderLink {
-  grid-area: 'orderLink';
+  grid-area: "orderLink";
   grid-column: 6/7;
+}
+
+#navLogo {
+  width: 90%;
+  height: 90%;
+}
+
+#cart {
+  height: 100%;
+  width: 100%;
 }
 
 /*Section for the styling of the main part of the page*/
@@ -51,48 +103,51 @@ body {
   display: grid;
   grid-template-rows: auto;
   grid-template-areas:
-    'greetingStart'
-    'greetingLogo'
-    'greetingEnd'
-    'about';
+    "greetingStart"
+    "greetingLogo"
+    "greetingEnd"
+    "about";
 }
 
 .greetingStart {
-  grid-area: 'greetingStart';
+  grid-area: "greetingStart";
   grid-row: 1/2;
   display: grid;
   justify-items: center;
   align-items: center;
-  font-family: 'Source Code Pro';
-  font-size: xx-large;
+  font-family: "Source Code Pro";
+  font-size: 300%;
+  transform: translateY(100px);
 }
 
 .greetingLogo {
-  grid-area: 'greetingLogo';
+  grid-area: "greetingLogo";
   grid-row: 2/3;
   display: grid;
   justify-items: center;
-  align-items: center;
+  align-items: flex-end;
+  transform: translateY(100px);
 }
 
 .greetingEnd {
-  grid-area: 'greetingEnd';
+  grid-area: "greetingEnd";
   grid-row: 3/4;
   display: grid;
   justify-items: center;
   align-items: center;
-  font-family: 'Source Code Pro';
-  font-size: xx-large;
+  font-family: "Source Code Pro";
+  font-size: 300%;
+  transform: translateY(50px);
 }
 
 .about {
-  grid-area: 'about';
+  grid-area: "about";
   grid-row: 4/5;
 }
 
 #greetingContainer {
   background-image: url(../images/sunBackground.gif);
-  background-size: contain;
+  background-size: 100%;
 }
 
 #logoMain {
@@ -101,6 +156,39 @@ body {
 }
 
 /*Section for the footer styling*/
-footer {
-  background-color: white;
+#homepageFooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "credits contactInfo copyright";
+  background-color: #3b3b3b;
+  font-size: 150%;
+}
+
+.credits {
+  grid-area: "credits";
+  grid-column: 1/2;
+  display: grid;
+  justify-items: center;
+  align-items: flex-start;
+}
+
+.contactInfo {
+  grid-area: "contactInfo";
+  grid-column: 2/3;
+  display: grid;
+  justify-items: center;
+  align-items: flex-start;
+}
+
+.copyright {
+  grid-area: "copyright";
+  grid-column: 3/4;
+  display: grid;
+  justify-items: center;
+  align-items: flex-start;
+}
+
+.footerTitles {
+  margin-bottom: 5%;
 }
