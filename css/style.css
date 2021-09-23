@@ -25,13 +25,13 @@ a:hover {
   display: grid;
   grid-template-columns: 10% 20% 20% 20% 20% auto;
   grid-template-rows: auto;
-  grid-template-areas: "logo companyName homeLink servicesLink galleryLink orderLink";
+  grid-template-areas: 'logo companyName homeLink servicesLink galleryLink orderLink';
   background-color: #3b3b3b;
   border-bottom: 3px #2e9e2c double;
 }
 
 .logo {
-  grid-area: "logo";
+  grid-area: 'logo';
   grid-column: 1/2;
   display: grid;
   justify-items: center;
@@ -39,19 +39,19 @@ a:hover {
 }
 
 .companyName {
-  grid-area: "companyName";
+  grid-area: 'companyName';
   grid-column: 2/3;
   display: grid;
   justify-items: left;
   align-items: flex-start;
-  font-family: "Source Code Pro";
+  font-family: 'Source Code Pro';
   font-size: 250%;
   padding-left: 0px;
   border-right: 3px #2e9e2c solid;
 }
 
 .homeLink {
-  grid-area: "homeLink";
+  grid-area: 'homeLink';
   grid-column: 3/4;
   border-right: 3px #2e9e2c solid;
   display: grid;
@@ -62,7 +62,7 @@ a:hover {
 }
 
 .servicesLink {
-  grid-area: "servicesLink";
+  grid-area: 'servicesLink';
   grid-column: 4/5;
   border-right: 3px #2e9e2c solid;
   display: grid;
@@ -73,7 +73,7 @@ a:hover {
 }
 
 .galleryLink {
-  grid-area: "galleryLink";
+  grid-area: 'galleryLink';
   grid-column: 5/6;
   border-right: 3px #2e9e2c solid;
   display: grid;
@@ -84,7 +84,7 @@ a:hover {
 }
 
 .orderLink {
-  grid-area: "orderLink";
+  grid-area: 'orderLink';
   grid-column: 6/7;
 }
 
@@ -103,56 +103,54 @@ a:hover {
   display: grid;
   grid-template-rows: auto;
   grid-template-areas:
-    "greetingStart"
-    "greetingLogo"
-    "greetingEnd"
-    "about";
+    'greetingStart'
+    'greetingLogo'
+    'greetingEnd'
+    'about';
 }
 
 .greetingStart {
-  grid-area: "greetingStart";
+  grid-area: 'greetingStart';
   grid-row: 1/2;
   display: grid;
   justify-items: center;
   align-items: center;
-  font-family: "Source Code Pro";
+  font-family: 'Source Code Pro';
   font-size: 300%;
-  transform: translateY(100px);
 }
 
 .greetingLogo {
-  grid-area: "greetingLogo";
+  grid-area: 'greetingLogo';
   grid-row: 2/3;
   display: grid;
   justify-items: center;
   align-items: flex-end;
-  transform: translateY(100px);
 }
 
 .greetingEnd {
-  grid-area: "greetingEnd";
+  grid-area: 'greetingEnd';
   grid-row: 3/4;
   display: grid;
   justify-items: center;
   align-items: center;
-  font-family: "Source Code Pro";
+  font-family: 'Source Code Pro';
   font-size: 300%;
-  transform: translateY(50px);
 }
 
 .about {
-  grid-area: "about";
+  grid-area: 'about';
   grid-row: 4/5;
 }
 
 #greetingContainer {
   background-image: url(../images/sunBackground.gif);
-  background-size: 100%;
+  background-size: cover;
 }
 
 #logoMain {
   width: 30%;
   height: auto;
+  opacity: 0.5;
 }
 
 /*Section for the footer styling*/
@@ -160,13 +158,13 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "credits contactInfo copyright";
+  grid-template-areas: 'credits contactInfo copyright';
   background-color: #3b3b3b;
   font-size: 150%;
 }
 
 .credits {
-  grid-area: "credits";
+  grid-area: 'credits';
   grid-column: 1/2;
   display: grid;
   justify-items: center;
@@ -174,7 +172,7 @@ a:hover {
 }
 
 .contactInfo {
-  grid-area: "contactInfo";
+  grid-area: 'contactInfo';
   grid-column: 2/3;
   display: grid;
   justify-items: center;
@@ -182,7 +180,7 @@ a:hover {
 }
 
 .copyright {
-  grid-area: "copyright";
+  grid-area: 'copyright';
   grid-column: 3/4;
   display: grid;
   justify-items: center;
