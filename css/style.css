@@ -3,6 +3,8 @@
 /*Section for universal style changes*/
 body {
   margin: 0px;
+  background-color: black;
+  color: green;
 }
 
 /*Section for the navbar styling*/
@@ -58,21 +60,44 @@ body {
 .greetingStart {
   grid-area: 'greetingStart';
   grid-row: 1/2;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-family: 'Source Code Pro';
+  font-size: xx-large;
 }
 
 .greetingLogo {
   grid-area: 'greetingLogo';
   grid-row: 2/3;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
 .greetingEnd {
   grid-area: 'greetingEnd';
   grid-row: 3/4;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-family: 'Source Code Pro';
+  font-size: xx-large;
 }
 
 .about {
   grid-area: 'about';
   grid-row: 4/5;
+}
+
+#greetingContainer {
+  background-image: url(../images/sunBackground.gif);
+  background-size: contain;
+}
+
+#logoMain {
+  width: 30%;
+  height: auto;
 }
 
 /*Section for the footer styling*/
