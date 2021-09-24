@@ -24,7 +24,7 @@ a:hover {
 #homepageNav {
   display: grid;
   grid-template-columns: 10% 20% 20% 20% 20% auto;
-  grid-template-rows: auto;
+  grid-template-rows: 40px;
   grid-template-areas: 'logo companyName homeLink servicesLink galleryLink orderLink';
   background-color: #3b3b3b;
   border-bottom: 3px #2e9e2c double;
@@ -45,7 +45,6 @@ a:hover {
   justify-items: left;
   align-items: flex-start;
   font-family: 'Source Code Pro';
-  font-size: 250%;
   padding-left: 0px;
   border-right: 3px #2e9e2c solid;
 }
@@ -53,34 +52,31 @@ a:hover {
 .homeLink {
   grid-area: 'homeLink';
   grid-column: 3/4;
-  border-right: 3px #2e9e2c solid;
   display: grid;
   justify-items: center;
   align-items: center;
-  font-size: 200%;
   padding: 0px;
+  border-right: 3px #2e9e2c solid;
 }
 
 .servicesLink {
   grid-area: 'servicesLink';
   grid-column: 4/5;
-  border-right: 3px #2e9e2c solid;
   display: grid;
   justify-items: center;
   align-items: center;
-  font-size: 200%;
   padding: 0px;
+  border-right: 3px #2e9e2c solid;
 }
 
 .galleryLink {
   grid-area: 'galleryLink';
   grid-column: 5/6;
-  border-right: 3px #2e9e2c solid;
   display: grid;
   justify-items: center;
   align-items: center;
-  font-size: 200%;
   padding: 0px;
+  border-right: 3px #2e9e2c solid;
 }
 
 .orderLink {
@@ -89,13 +85,15 @@ a:hover {
 }
 
 #navLogo {
-  width: 90%;
-  height: 90%;
+  height: 7%;
+  width: 5%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #cart {
   height: 100%;
-  width: 100%;
 }
 
 /*Section for the styling of the main part of the page*/
@@ -110,6 +108,7 @@ a:hover {
 }
 
 .greetingStart {
+  margin-bottom: 0%;
   grid-area: 'greetingStart';
   grid-row: 1/2;
   display: grid;
@@ -125,9 +124,11 @@ a:hover {
   display: grid;
   justify-items: center;
   align-items: flex-end;
+  transform: translateY(-100px);
 }
 
 .greetingEnd {
+  margin-top: 0%;
   grid-area: 'greetingEnd';
   grid-row: 3/4;
   display: grid;
@@ -135,32 +136,36 @@ a:hover {
   align-items: center;
   font-family: 'Source Code Pro';
   font-size: 300%;
+  transform: translateY(-200px);
 }
 
 .about {
   grid-area: 'about';
   grid-row: 4/5;
-}
-
-#greetingContainer {
-  background-image: url(../images/sunBackground.gif);
-  background-size: cover;
+  font-size: 200%;
+  padding-left: 5%;
+  padding-right: 5%;
+  transform: translateY(-200px);
 }
 
 #logoMain {
   width: 30%;
   height: auto;
-  opacity: 0.5;
+}
+
+#mainPageContainer {
+  background-image: url(../images/sunBackground.gif);
+  background-size: cover;
 }
 
 /*Section for the footer styling*/
 #homepageFooter {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 10%;
   grid-template-areas: 'credits contactInfo copyright';
   background-color: #3b3b3b;
-  font-size: 150%;
+  font-size: 75%;
 }
 
 .credits {
@@ -185,8 +190,4 @@ a:hover {
   display: grid;
   justify-items: center;
   align-items: flex-start;
-}
-
-.footerTitles {
-  margin-bottom: 5%;
 }
