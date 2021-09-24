@@ -19,7 +19,7 @@ a:hover {
 }
 
 form {
-  font-family: "Source Code Pro";
+  font-family: 'Source Code Pro';
   background-image: url(../images/orderBackground.gif);
   background-size: cover;
 }
@@ -38,14 +38,14 @@ textarea {
   resize: none;
   background-color: black;
   color: green;
-  font-family: "Source Code Pro";
+  font-family: 'Source Code Pro';
   border: 2px solid green;
 }
 
 input {
   background-color: black;
   color: green;
-  font-family: "Source Code Pro";
+  font-family: 'Source Code Pro';
   border: 1px solid green;
   margin-top: 0.5%;
   margin-bottom: 0.5%;
@@ -55,13 +55,13 @@ nav {
   display: grid;
   grid-template-columns: 10% 20% 20% 20% 20% auto;
   grid-template-rows: 40px;
-  grid-template-areas: "logo companyName homeLink servicesLink galleryLink orderLink";
+  grid-template-areas: 'logo companyName homeLink servicesLink galleryLink orderLink';
   background-color: #3b3b3b;
   border-bottom: 3px #2e9e2c double;
 }
 
 .logo {
-  grid-area: "logo";
+  grid-area: 'logo';
   grid-column: 1/2;
   display: grid;
   justify-items: center;
@@ -69,18 +69,18 @@ nav {
 }
 
 .companyName {
-  grid-area: "companyName";
+  grid-area: 'companyName';
   grid-column: 2/3;
   display: grid;
   justify-items: left;
   align-items: flex-start;
-  font-family: "Source Code Pro";
+  font-family: 'Source Code Pro';
   padding-left: 0px;
   border-right: 3px #2e9e2c solid;
 }
 
 .homeLink {
-  grid-area: "homeLink";
+  grid-area: 'homeLink';
   grid-column: 3/4;
   display: grid;
   justify-items: center;
@@ -90,7 +90,7 @@ nav {
 }
 
 .servicesLink {
-  grid-area: "servicesLink";
+  grid-area: 'servicesLink';
   grid-column: 4/5;
   display: grid;
   justify-items: center;
@@ -100,7 +100,7 @@ nav {
 }
 
 .galleryLink {
-  grid-area: "galleryLink";
+  grid-area: 'galleryLink';
   grid-column: 5/6;
   display: grid;
   justify-items: center;
@@ -110,7 +110,7 @@ nav {
 }
 
 .orderLink {
-  grid-area: "orderLink";
+  grid-area: 'orderLink';
   grid-column: 6/7;
 }
 
@@ -135,13 +135,13 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 10%;
-  grid-template-areas: "credits contactInfo copyright";
+  grid-template-areas: 'credits contactInfo copyright';
   background-color: #3b3b3b;
   font-size: 75%;
 }
 
 .credits {
-  grid-area: "credits";
+  grid-area: 'credits';
   grid-column: 1/2;
   display: grid;
   justify-items: center;
@@ -149,7 +149,7 @@ footer {
 }
 
 .contactInfo {
-  grid-area: "contactInfo";
+  grid-area: 'contactInfo';
   grid-column: 2/3;
   display: grid;
   justify-items: center;
@@ -157,7 +157,7 @@ footer {
 }
 
 .copyright {
-  grid-area: "copyright";
+  grid-area: 'copyright';
   grid-column: 3/4;
   display: grid;
   justify-items: center;
@@ -170,25 +170,25 @@ footer {
   display: grid;
   grid-template-rows: auto;
   grid-template-areas:
-    "greetingStart"
-    "greetingLogo"
-    "greetingEnd"
-    "about";
+    'greetingStart'
+    'greetingLogo'
+    'greetingEnd'
+    'about';
 }
 
 .greetingStart {
   margin-bottom: 0%;
-  grid-area: "greetingStart";
+  grid-area: 'greetingStart';
   grid-row: 1/2;
   display: grid;
   justify-items: center;
   align-items: center;
-  font-family: "Source Code Pro";
+  font-family: 'Source Code Pro';
   font-size: 300%;
 }
 
 .greetingLogo {
-  grid-area: "greetingLogo";
+  grid-area: 'greetingLogo';
   grid-row: 2/3;
   display: grid;
   justify-items: center;
@@ -198,24 +198,24 @@ footer {
 
 .greetingEnd {
   margin-top: 0%;
-  grid-area: "greetingEnd";
+  grid-area: 'greetingEnd';
   grid-row: 3/4;
   display: grid;
   justify-items: center;
   align-items: center;
-  font-family: "Source Code Pro";
+  font-family: 'Source Code Pro';
   font-size: 300%;
   transform: translateY(-200px);
 }
 
 .about {
-  grid-area: "about";
+  grid-area: 'about';
   grid-row: 4/5;
   font-size: 200%;
   padding-left: 5%;
   padding-right: 5%;
   transform: translateY(-200px);
-  font-family: "Source Code Pro";
+  font-family: 'Source Code Pro';
 }
 
 #logoMain {
@@ -251,4 +251,9 @@ footer {
 
 .disclaimerMarker {
   font-size: 50%;
+}
+
+#colorPicker {
+  width: 10%;
+  height: 50%;
 }
