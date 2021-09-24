@@ -35,6 +35,8 @@
     <!--Beginning of the order form-->
     <form>
         <h1 id="orderFormTitle">Place an Order</h1>
+            
+            <!--Section for User Info-->
             <fieldset>
                  <legend>User Info</legend> </p>
                 <ul>
@@ -58,35 +60,49 @@
                 <em class="disclaimer"><sup>*</sup>Current cell phone models may or may not be able to reach through the cold heart of space. 
                     If you're experiencing connection issues, please contact customer support for an alternative contact method.</em>
             </fieldset>
+            
+            <!--Section for Star Specifications-->
             <fieldset>
                 <legend>Star Specificatons</legend>   
+                
+                <!--Section for the type of star and how many-->
                 <h4>Type of Star:</h4>
                 <ul>
                     <li>
                         <input type="checkbox" id="average" name="average" value="average" unchecked>
-                        <label for="average">Average Star</label><br>
+                        <label for="average">Average Star</label>
+                        <input type="number" id="quantity1" name="quantity1" class="quantity">
+                        <label fotr="quantity1">How many would you like?</label>
                     </li>
                     <li>
                         <input type="checkbox" id="giant" name="giant" value="giant" unchecked>
-                        <label for="giant">Red Giant</label><br>
+                        <label for="giant">Red Giant</label>
+                        <input type="number" id="quantity2" name="quantity2" class="quantity">
+                        <label fotr="quantity2">How many would you like?</label>
                     </li>
                     <li>
                         <input type="checkbox" id="massive" name="massive" value="massive" unchecked>
-                        <label for="massive">Massive Star</label><br>
+                        <label for="massive">Massive Star</label>
+                        <input type="number" id="quantity3" name="quantity3" class="quantity">
+                        <label fotr="quantity3">How many would you like?</label>
                     </li>
                     <li>
                         <input type="checkbox" id="white" name="white" value="white" unchecked>
-                        <label for="white">White Dwarf</label><br>
+                        <label for="white">White Dwarf</label>
+                        <input type="number" id="quantity4" name="quantity4" class="quantity">
+                        <label fotr="quantity4">How many would you like?</label>
                     </li>
                     <li>
                         <input type="checkbox" id="black" name="black" value="black" unchecked>
-                        <label for="black">Black Dwarf</label><br>
+                        <label for="black">Black Dwarf</label>
+                        <input type="number" id="quantity5" name="quantity5" class="quantity">
+                        <label fotr="quantity5">How many would you like?</label>
                     </li>
-                    <li>
-                        <label for="color">Color: </label>
-                        <input type="text" id="color" name="color" />
-                    </li>
-                    <h4>Star Size:</h4>
+                </ul>
+                
+                <!--Section for the size of the star(s)-->
+                <h4>Star Size<sup class="disclaimerMarker">*</sup>:</h4>
+                <ul>
                     <li>
                         <input type="radio" id="small" name="size" value="small" unchecked>
                         <label for="small">Small</label><br>
@@ -101,10 +117,21 @@
                     </li>
                     <li>
                         <input type="radio" id="xl" name="size" value="xl" unchecked>
-                        <label for="xl">Extra Large</label><br>
+                        <label for="xl">Extra Large<sup class="disclaimerMarker">*</sup></label><br>
                     </li>
                 </ul>
+                <em class="disclaimer">* certain star sizes may not be applicable to all types
+                    <br>
+                    * STS is not responsible for any damage caused by unintentional supernova or black hole formations as a result of massive stars
+                </em>
+                <!--Section for the color PLACEHOLDER-->
+                <h4>Star Color:</h4>
+                <ul>
+
+                </ul>
             </fieldset>
+
+            <!--Section for shipping-->
             <fieldset id="shippingField">
                 <legend>Shipping Info</legend>
                 <ul>
@@ -120,13 +147,12 @@
                         <input type="radio" id="express" name="shipping" value="express" unchecked>
                         <label for="express">Express Shipping</label><br>
                     </li>
-                    <textarea type="textarea" id="box" name="box" value="box">
-                    
-                    </textarea>
-                    <label for="box">Special Shipping Instructions</label>
                 </ul>
-        </fieldset>
+                <label for="specialInstructions">Special Shipping Instructions:</label><br>
+                <textarea id="specialInstructions" name="special.instructions" rows="5" cols="33"></textarea>
+            </fieldset>
     </form>
+    
     <!--Footer section-->
     <footer>
         <div class="credits grid-area">

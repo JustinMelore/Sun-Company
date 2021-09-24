@@ -34,6 +34,23 @@ legend {
   font-size: 200%;
 }
 
+textarea {
+  resize: none;
+  background-color: black;
+  color: green;
+  font-family: "Source Code Pro";
+  border: 2px solid green;
+}
+
+input {
+  background-color: black;
+  color: green;
+  font-family: "Source Code Pro";
+  border: 1px solid green;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
 nav {
   display: grid;
   grid-template-columns: 10% 20% 20% 20% 20% auto;
@@ -225,4 +242,13 @@ footer {
 
 #shippingField {
   margin-bottom: 0%;
+}
+
+.quantity {
+  margin-left: 5px;
+  width: 30px;
+}
+
+.disclaimerMarker {
+  font-size: 50%;
 }
