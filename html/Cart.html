@@ -34,7 +34,7 @@
 
     <!--Beginning of the order form-->
     <form>
-        <h1>Place an Order</h1>
+        <h1 id="orderFormTitle">Place an Order</h1>
             <fieldset>
                  <legend>User Info</legend> </p>
                 <ul>
@@ -51,10 +51,12 @@
                         <input type="text" id="home" name="home" />
                     </li>
                     <li>
-                        <label for="tele">Phone Number:</label>
+                        <label for="tele">Phone Number<sup>*</sup>:</label>
                         <input type="number" id="tele" name="tele" />
                     </li>
                 </ul>
+                <em class="disclaimer"><sup>*</sup>Current cell phone models may or may not be able to reach through the cold heart of space. 
+                    If you're experiencing connection issues, please contact customer support for an alternative contact method.</em>
             </fieldset>
             <fieldset>
                 <legend>Star Specificatons</legend>   
@@ -103,7 +105,7 @@
                     </li>
                 </ul>
             </fieldset>
-            <fieldset>
+            <fieldset id="shippingField">
                 <legend>Shipping Info</legend>
                 <ul>
                     <li>

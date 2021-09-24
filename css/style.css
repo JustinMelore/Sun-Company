@@ -18,6 +18,22 @@ a:hover {
   color: orangered;
 }
 
+form {
+  font-family: "Source Code Pro";
+  background-image: url(../images/orderBackground.gif);
+  background-size: cover;
+}
+
+fieldset {
+  margin: auto 10% 3% 10%;
+  border: 5px double green;
+}
+
+legend {
+  text-decoration: underline;
+  font-size: 200%;
+}
+
 nav {
   display: grid;
   grid-template-columns: 10% 20% 20% 20% 20% auto;
@@ -197,3 +213,16 @@ footer {
 }
 
 /*ORDER FORM STYLING HERE*/
+#orderFormTitle {
+  margin-top: 0%;
+  text-align: center;
+  font-size: 300%;
+}
+
+.disclaimer {
+  font-size: 60%;
+}
+
+#shippingField {
+  margin-bottom: 0%;
+}
