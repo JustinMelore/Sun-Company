@@ -1,6 +1,4 @@
-/*HOMEPAGE HERE*/
-
-/*Section for universal style changes*/
+/*UNIVERSAL STYLING*/
 body {
   margin: 0px;
   background-color: black;
@@ -20,18 +18,50 @@ a:hover {
   color: orangered;
 }
 
-/*Section for the navbar styling*/
+form {
+  font-family: "Source Code Pro";
+  background-image: url(../images/orderBackground.gif);
+  background-size: cover;
+}
+
+fieldset {
+  margin: auto 10% 3% 10%;
+  border: 5px double green;
+}
+
+legend {
+  text-decoration: underline;
+  font-size: 200%;
+}
+
+textarea {
+  resize: none;
+  background-color: black;
+  color: green;
+  font-family: "Source Code Pro";
+  border: 2px solid green;
+}
+
+input {
+  background-color: black;
+  color: green;
+  font-family: "Source Code Pro";
+  border: 1px solid green;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
 nav {
   display: grid;
   grid-template-columns: 10% 20% 20% 20% 20% auto;
   grid-template-rows: 40px;
-  grid-template-areas: 'logo companyName homeLink servicesLink galleryLink orderLink';
+  grid-template-areas: "logo companyName homeLink servicesLink galleryLink orderLink";
   background-color: #3b3b3b;
   border-bottom: 3px #2e9e2c double;
 }
 
 .logo {
-  grid-area: 'logo';
+  grid-area: "logo";
   grid-column: 1/2;
   display: grid;
   justify-items: center;
@@ -39,18 +69,18 @@ nav {
 }
 
 .companyName {
-  grid-area: 'companyName';
+  grid-area: "companyName";
   grid-column: 2/3;
   display: grid;
   justify-items: left;
   align-items: flex-start;
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
   padding-left: 0px;
   border-right: 3px #2e9e2c solid;
 }
 
 .homeLink {
-  grid-area: 'homeLink';
+  grid-area: "homeLink";
   grid-column: 3/4;
   display: grid;
   justify-items: center;
@@ -60,7 +90,7 @@ nav {
 }
 
 .servicesLink {
-  grid-area: 'servicesLink';
+  grid-area: "servicesLink";
   grid-column: 4/5;
   display: grid;
   justify-items: center;
@@ -70,7 +100,7 @@ nav {
 }
 
 .galleryLink {
-  grid-area: 'galleryLink';
+  grid-area: "galleryLink";
   grid-column: 5/6;
   display: grid;
   justify-items: center;
@@ -80,7 +110,7 @@ nav {
 }
 
 .orderLink {
-  grid-area: 'orderLink';
+  grid-area: "orderLink";
   grid-column: 6/7;
 }
 
@@ -100,30 +130,65 @@ nav {
   height: 100%;
 }
 
+footer {
+  border-top: 2px double green;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10%;
+  grid-template-areas: "credits contactInfo copyright";
+  background-color: #3b3b3b;
+  font-size: 75%;
+}
+
+.credits {
+  grid-area: "credits";
+  grid-column: 1/2;
+  display: grid;
+  justify-items: center;
+  align-items: flex-start;
+}
+
+.contactInfo {
+  grid-area: "contactInfo";
+  grid-column: 2/3;
+  display: grid;
+  justify-items: center;
+  align-items: flex-start;
+}
+
+.copyright {
+  grid-area: "copyright";
+  grid-column: 3/4;
+  display: grid;
+  justify-items: center;
+  align-items: flex-start;
+}
+
+/*HOMEPAGE HERE*/
 /*Section for the styling of the main part of the page*/
 #hompageInfo {
   display: grid;
   grid-template-rows: auto;
   grid-template-areas:
-    'greetingStart'
-    'greetingLogo'
-    'greetingEnd'
-    'about';
+    "greetingStart"
+    "greetingLogo"
+    "greetingEnd"
+    "about";
 }
 
 .greetingStart {
   margin-bottom: 0%;
-  grid-area: 'greetingStart';
+  grid-area: "greetingStart";
   grid-row: 1/2;
   display: grid;
   justify-items: center;
   align-items: center;
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
   font-size: 300%;
 }
 
 .greetingLogo {
-  grid-area: 'greetingLogo';
+  grid-area: "greetingLogo";
   grid-row: 2/3;
   display: grid;
   justify-items: center;
@@ -133,24 +198,24 @@ nav {
 
 .greetingEnd {
   margin-top: 0%;
-  grid-area: 'greetingEnd';
+  grid-area: "greetingEnd";
   grid-row: 3/4;
   display: grid;
   justify-items: center;
   align-items: center;
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
   font-size: 300%;
   transform: translateY(-200px);
 }
 
 .about {
-  grid-area: 'about';
+  grid-area: "about";
   grid-row: 4/5;
   font-size: 200%;
   padding-left: 5%;
   padding-right: 5%;
   transform: translateY(-200px);
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
 }
 
 #logoMain {
@@ -164,37 +229,26 @@ nav {
   background-size: cover;
 }
 
-/*Section for the footer styling*/
-footer {
-  border-top: 2px double green;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 10%;
-  grid-template-areas: 'credits contactInfo copyright';
-  background-color: #3b3b3b;
-  font-size: 75%;
+/*ORDER FORM STYLING HERE*/
+#orderFormTitle {
+  margin-top: 0%;
+  text-align: center;
+  font-size: 300%;
 }
 
-.credits {
-  grid-area: 'credits';
-  grid-column: 1/2;
-  display: grid;
-  justify-items: center;
-  align-items: flex-start;
+.disclaimer {
+  font-size: 60%;
 }
 
-.contactInfo {
-  grid-area: 'contactInfo';
-  grid-column: 2/3;
-  display: grid;
-  justify-items: center;
-  align-items: flex-start;
+#shippingField {
+  margin-bottom: 0%;
 }
 
-.copyright {
-  grid-area: 'copyright';
-  grid-column: 3/4;
-  display: grid;
-  justify-items: center;
-  align-items: flex-start;
+.quantity {
+  margin-left: 5px;
+  width: 30px;
+}
+
+.disclaimerMarker {
+  font-size: 50%;
 }
