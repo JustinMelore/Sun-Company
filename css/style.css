@@ -21,7 +21,7 @@ a:hover {
 }
 
 /*Section for the navbar styling*/
-#homepageNav {
+nav {
   display: grid;
   grid-template-columns: 10% 20% 20% 20% 20% auto;
   grid-template-rows: 40px;
@@ -165,7 +165,7 @@ a:hover {
 }
 
 /*Section for the footer styling*/
-#homepageFooter {
+footer {
   border-top: 2px double green;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
