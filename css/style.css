@@ -90,6 +90,7 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
+  filter: contrast(250%);
 }
 
 #cart {
@@ -155,6 +156,7 @@ a:hover {
 #logoMain {
   width: 30%;
   height: auto;
+  filter: contrast(250%);
 }
 
 #mainPageContainer {
@@ -164,6 +166,7 @@ a:hover {
 
 /*Section for the footer styling*/
 #homepageFooter {
+  border-top: 2px double green;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 10%;
