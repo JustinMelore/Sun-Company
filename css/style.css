@@ -259,3 +259,7 @@ footer {
   border: none;
   padding: none;
 }
+
+.Average {
+  display: grid;
+}
