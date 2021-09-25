@@ -291,7 +291,9 @@ footer {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: auto;
-  grid-template-areas: 'Average ';
+  grid-template-areas:
+    'Average . . . '
+    '. . . .';
 }
 .Average {
   display: grid;
