@@ -287,6 +287,19 @@ footer {
   width: 50%;
 }
 
+/*SERVICES STYLING SECTION*/
+#servicesHeader {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 700%;
+  font-family: 'Source Code Pro';
+  background-image: url('../images/spaceBackground.jfif');
+  background-size: cover;
+  text-decoration: underline;
+}
+
+/*GALLERY STYLING SECTION*/
 .container {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
