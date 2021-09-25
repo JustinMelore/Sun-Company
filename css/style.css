@@ -81,9 +81,26 @@ ul {
 }
 
 table {
-  border: 2px solid green;
   background-image: url(../images/spaceBackground.jfif);
   background-size: cover;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+tr {
+  border: 2px solid green;
+  margin-bottom: 0%;
+}
+
+th {
+  border: 2px solid green;
+  margin: auto 0% auto 0%;
+}
+
+td {
+  border: 2px solid green;
+  margin: auto 0% auto 0%;
+  text-align: center;
 }
 
 nav {
@@ -304,7 +321,7 @@ footer {
   display: flex;
   justify-content: left;
   align-items: center;
-  font-size: 700%;
+  font-size: 500%;
   font-family: "Source Code Pro";
   background-image: url("../images/spaceBackground.jfif");
   background-size: cover;
@@ -337,8 +354,26 @@ footer {
 }
 
 .sunToken {
+  width: 10%;
+  height: 10%;
+}
+
+#sunTokenLarge {
   width: 1%;
   height: 1%;
+}
+
+#secondGalleryLink {
+  color: blue;
+  text-decoration: underline;
+}
+
+#secondGalleryLink:visited {
+  color: purple;
+}
+
+#secondGalleryLink:hover {
+  color: orange;
 }
 
 /*GALLERY STYLING SECTION*/
