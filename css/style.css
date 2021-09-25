@@ -19,7 +19,7 @@ a:hover {
 }
 
 form {
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
   background-image: url(../images/orderBackground.gif);
   background-size: cover;
 }
@@ -38,14 +38,14 @@ textarea {
   resize: none;
   background-color: black;
   color: green;
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
   border: 2px solid green;
 }
 
 input {
   background-color: black;
   color: green;
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
   border: 1px solid green;
   margin-top: 0.5%;
   margin-bottom: 0.5%;
@@ -60,7 +60,7 @@ button {
   width: 200px;
   background-color: black;
   color: green;
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,35 +74,47 @@ button:hover {
   color: orange;
 }
 
+ul {
+  margin-bottom: 0%;
+  padding-bottom: 1%;
+  font-size: 125%;
+}
+
+table {
+  border: 2px solid green;
+  background-image: url(../images/spaceBackground.jfif);
+  background-size: cover;
+}
+
 nav {
   display: grid;
   grid-template-columns: 10% 20% 20% 20% 20% auto;
   grid-template-rows: 40px;
-  grid-template-areas: 'logo companyName homeLink servicesLink galleryLink orderLink';
+  grid-template-areas: "logo companyName homeLink servicesLink galleryLink orderLink";
   background-color: #3b3b3b;
   border-bottom: 3px #2e9e2c double;
 }
 
 .logo {
-  grid-area: 'logo';
+  grid-area: "logo";
   grid-column: 1/2;
   display: grid;
   justify-content: space-between;
 }
 
 .companyName {
-  grid-area: 'companyName';
+  grid-area: "companyName";
   grid-column: 2/3;
   display: grid;
   justify-items: left;
   align-items: flex-start;
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
   padding-left: 0px;
   border-right: 3px #2e9e2c solid;
 }
 
 .homeLink {
-  grid-area: 'homeLink';
+  grid-area: "homeLink";
   grid-column: 3/4;
   display: grid;
   justify-items: center;
@@ -112,7 +124,7 @@ nav {
 }
 
 .servicesLink {
-  grid-area: 'servicesLink';
+  grid-area: "servicesLink";
   grid-column: 4/5;
   display: grid;
   justify-items: center;
@@ -122,7 +134,7 @@ nav {
 }
 
 .galleryLink {
-  grid-area: 'galleryLink';
+  grid-area: "galleryLink";
   grid-column: 5/6;
   display: grid;
   justify-items: center;
@@ -132,7 +144,7 @@ nav {
 }
 
 .orderLink {
-  grid-area: 'orderLink';
+  grid-area: "orderLink";
   grid-column: 6/7;
 }
 
@@ -157,13 +169,13 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 10%;
-  grid-template-areas: 'credits contactInfo copyright';
+  grid-template-areas: "credits contactInfo copyright";
   background-color: #3b3b3b;
   font-size: 75%;
 }
 
 .credits {
-  grid-area: 'credits';
+  grid-area: "credits";
   grid-column: 1/2;
   display: grid;
   justify-items: center;
@@ -171,7 +183,7 @@ footer {
 }
 
 .contactInfo {
-  grid-area: 'contactInfo';
+  grid-area: "contactInfo";
   grid-column: 2/3;
   display: grid;
   justify-items: center;
@@ -179,7 +191,7 @@ footer {
 }
 
 .copyright {
-  grid-area: 'copyright';
+  grid-area: "copyright";
   grid-column: 3/4;
   display: grid;
   justify-items: center;
@@ -192,25 +204,25 @@ footer {
   display: grid;
   grid-template-rows: auto;
   grid-template-areas:
-    'greetingStart'
-    'greetingLogo'
-    'greetingEnd'
-    'about';
+    "greetingStart"
+    "greetingLogo"
+    "greetingEnd"
+    "about";
 }
 
 .greetingStart {
   margin-bottom: 0%;
-  grid-area: 'greetingStart';
+  grid-area: "greetingStart";
   grid-row: 1/2;
   display: grid;
   justify-items: center;
   align-items: center;
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
   font-size: 300%;
 }
 
 .greetingLogo {
-  grid-area: 'greetingLogo';
+  grid-area: "greetingLogo";
   grid-row: 2/3;
   display: grid;
   justify-items: center;
@@ -220,24 +232,24 @@ footer {
 
 .greetingEnd {
   margin-top: 0%;
-  grid-area: 'greetingEnd';
+  grid-area: "greetingEnd";
   grid-row: 3/4;
   display: grid;
   justify-items: center;
   align-items: center;
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
   font-size: 300%;
   transform: translateY(-200px);
 }
 
 .about {
-  grid-area: 'about';
+  grid-area: "about";
   grid-row: 4/5;
   font-size: 200%;
   padding-left: 5%;
   padding-right: 5%;
   transform: translateY(-200px);
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
 }
 
 #logoMain {
@@ -293,10 +305,40 @@ footer {
   justify-content: left;
   align-items: center;
   font-size: 700%;
-  font-family: 'Source Code Pro';
-  background-image: url('../images/spaceBackground.jfif');
+  font-family: "Source Code Pro";
+  background-image: url("../images/spaceBackground.jfif");
   background-size: cover;
   text-decoration: underline;
+  height: 50vh;
+}
+
+#servicesLogo {
+  height: 100%;
+}
+
+#servicesBody {
+  background-color: #262626;
+}
+
+.servicesInfo {
+  filter: contrast(250%);
+  border-bottom: 2px solid green;
+  padding-left: 2%;
+}
+
+.servicesTitle {
+  font-size: 300%;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.servicesParagraph {
+  font-size: 150%;
+}
+
+.sunToken {
+  width: 1%;
+  height: 1%;
 }
 
 /*GALLERY STYLING SECTION*/
@@ -305,8 +347,8 @@ footer {
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: auto;
   grid-template-areas:
-    'Average . . . '
-    '. . . .';
+    "Average . . . "
+    ". . . .";
 }
 .Average {
   width: 100%;
