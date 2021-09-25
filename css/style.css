@@ -51,6 +51,29 @@ input {
   margin-bottom: 0.5%;
 }
 
+button {
+  margin-top: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  width: 200px;
+  background-color: black;
+  color: green;
+  font-family: 'Source Code Pro';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150%;
+  border: 2px solid green;
+  text-decoration: underline;
+}
+
+button:hover {
+  border: 2px solid orange;
+  color: orange;
+}
+
 nav {
   display: grid;
   grid-template-columns: 10% 20% 20% 20% 20% auto;
@@ -64,8 +87,7 @@ nav {
   grid-area: 'logo';
   grid-column: 1/2;
   display: grid;
-  justify-items: center;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .companyName {
@@ -262,4 +284,8 @@ footer {
 
 .Average {
   display: grid;
+}
+#buttonGif {
+  height: 100%;
+  width: 50%;
 }
