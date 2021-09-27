@@ -378,6 +378,11 @@ footer {
 }
 
 /*GALLERY STYLING SECTION*/
+#galleryTitle {
+  font-size: 500%;
+  text-align: center;
+}
+
 #gallery {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
