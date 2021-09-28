@@ -103,6 +103,12 @@ td {
   text-align: center;
 }
 
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 nav {
   display: grid;
   grid-template-columns: 10% 20% 20% 20% 20% auto;
@@ -387,6 +393,11 @@ footer {
   text-align: center;
 }
 
+#galleryBody {
+  background-image: url(../images/spaceBackground.jfif);
+  background-size: 100%;
+}
+
 #gallery {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -396,6 +407,12 @@ footer {
     'black . . . '
     'review1 review2 review3 review4';
 }
+
+#galleryDescription {
+  font-size: 300%;
+  text-align: center;
+}
+
 .Average {
   width: 100%;
   height: 100%;
