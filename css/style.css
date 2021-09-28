@@ -412,8 +412,12 @@ footer {
   grid-template-rows: auto;
   grid-template-areas:
     "Average massive giant white "
-    "black starChart starChart neutronStar "
+    "averageDescription massiveDescription giantDescription whiteDescription"
+    "black starChart starChart neutronStar"
+    "blackDescription chartDescription chartDescription neutronDescription"
     "review1 review2 review3 review4";
+  margin-bottom: 1%;
+  margin-top: 0.5%;
 }
 
 #galleryDescription {
@@ -426,6 +430,7 @@ footer {
   grid-column: 1/2;
   grid-row: 1/2;
   border: green 3px solid;
+  margin-right: 3%;
 }
 
 .massive {
@@ -433,6 +438,7 @@ footer {
   grid-column: 2/3;
   grid-row: 1/2;
   border: green 3px solid;
+  margin-right: 3%;
 }
 
 .giant {
@@ -447,33 +453,111 @@ footer {
   grid-column: 4/5;
   grid-row: 1/2;
   border: green 3px solid;
+  margin-left: 3%;
+}
+
+.averageDescription {
+  grid-area: "averageDescription";
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: grid;
+  justify-items: center;
+  border-top: 0px;
+  margin-bottom: 5%;
+  margin-right: 3%;
+}
+
+.massiveDescription {
+  grid-area: "massiveDescription";
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  justify-items: center;
+  border-top: 0px;
+  margin-bottom: 5%;
+  margin-right: 3%;
+}
+
+.giantDescription {
+  grid-area: "giantDescription";
+  grid-column: 3/4;
+  grid-row: 2/3;
+  display: grid;
+  justify-items: center;
+  border-top: 0px;
+  margin-bottom: 5%;
+}
+
+.whiteDescription {
+  grid-area: "whiteDescription";
+  grid-column: 4/5;
+  grid-row: 2/3;
+  display: grid;
+  justify-items: center;
+  border-top: 0px;
+  margin-bottom: 5%;
+  margin-left: 3%;
 }
 
 .black {
   grid-area: "black";
   grid-column: 1/2;
-  grid-row: 2/3;
+  grid-row: 3/4;
   border: green 3px solid;
+  margin-right: 3%;
 }
 
 .starChart {
   grid-area: "starChart";
   grid-column: 2/4;
-  grid-row: 2/3;
+  grid-row: 3/4;
   border: green 3px solid;
 }
 
 .neutronStar {
   grid-area: "neutronStar";
   grid-column: 4/5;
-  grid-row: 2/3;
+  grid-row: 3/4;
   border: green 3px solid;
+  margin-left: 3%;
+}
+
+.blackDescription {
+  grid-area: "blackDescription";
+  grid-column: 1/2;
+  grid-row: 4/5;
+  display: grid;
+  justify-items: center;
+  border-top: 0px;
+  margin-bottom: 5%;
+  margin-right: 3%;
+}
+
+.chartDescription {
+  grid-area: "chartDescription";
+  grid-column: 2/4;
+  grid-row: 4/5;
+  display: grid;
+  justify-items: center;
+  border-top: 0px;
+  margin-bottom: 5%;
+}
+
+.neutronDescription {
+  grid-area: "neutronDescription";
+  grid-column: 4/5;
+  grid-row: 4/5;
+  display: grid;
+  justify-items: center;
+  border-top: 0px;
+  margin-bottom: 5%;
+  margin-left: 3%;
 }
 
 .review1 {
   display: grid;
   grid-column: 1/2;
-  grid-row: 3/4;
+  grid-row: 5/6;
   border: 2px solid;
   border-color: #2e9e2c;
 }
@@ -481,7 +565,7 @@ footer {
 .review2 {
   display: grid;
   grid-column: 2/3;
-  grid-row: 3/4;
+  grid-row: 5/6;
   border: 2px solid;
   border-color: #2e9e2c;
 }
@@ -489,7 +573,7 @@ footer {
 .review3 {
   display: grid;
   grid-column: 3/4;
-  grid-row: 3/4;
+  grid-row: 5/6;
   border: 2px solid;
   border-color: #2e9e2c;
 }
@@ -497,7 +581,7 @@ footer {
 .review4 {
   display: grid;
   grid-column: 4/5;
-  grid-row: 3/4;
+  grid-row: 5/6;
   border: 2px solid;
   border-color: #2e9e2c;
 }
