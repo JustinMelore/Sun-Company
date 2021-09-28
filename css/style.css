@@ -387,6 +387,12 @@ footer {
 #galleryTitle {
   font-size: 500%;
   text-align: center;
+  text-decoration: underline;
+}
+
+#galleryDescription {
+  font-size: 200%;
+  text-align: center;
 }
 
 .galleryImage {
@@ -397,6 +403,7 @@ footer {
 #galleryBody {
   background-image: url(../images/spaceBackground.jfif);
   background-size: 100%;
+  font-family: 'Source Code Pro';
 }
 
 #gallery {
