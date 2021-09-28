@@ -388,6 +388,11 @@ footer {
 }
 
 /*GALLERY STYLING SECTION*/
+.galleryImages {
+  height: 100%;
+  width: 100%;
+}
+
 #galleryTitle {
   font-size: 500%;
   text-align: center;
@@ -404,7 +409,7 @@ footer {
   grid-template-rows: auto;
   grid-template-areas:
     'Average massive giant white '
-    'black . . . '
+    'black starChart starChart neutronStar '
     'review1 review2 review3 review4';
 }
 
@@ -414,43 +419,52 @@ footer {
 }
 
 .Average {
-  width: 100%;
-  height: 100%;
-  display: grid;
+  grid-area: 'Average';
   grid-column: 1/2;
   grid-row: 1/2;
+  border: green 3px solid;
 }
 
 .massive {
-  width: 100%;
-  height: 100%;
-  display: grid;
+  grid-area: 'massive';
   grid-column: 2/3;
   grid-row: 1/2;
+  border: green 3px solid;
 }
 
 .giant {
-  width: 100%;
-  height: 100%;
-  display: grid;
+  grid-area: 'giant';
   grid-column: 3/4;
   grid-row: 1/2;
+  border: green 3px solid;
 }
 
 .white {
-  width: 100%;
-  height: 100%;
-  display: grid;
+  grid-area: 'white';
   grid-column: 4/5;
   grid-row: 1/2;
+  border: green 3px solid;
 }
 
 .black {
-  width: 100%;
-  height: 100%;
-  display: grid;
+  grid-area: 'black';
   grid-column: 1/2;
-  grid-row: 2/2;
+  grid-row: 2/3;
+  border: green 3px solid;
+}
+
+.starChart {
+  grid-area: 'starChart';
+  grid-column: 2/4;
+  grid-row: 2/3;
+  border: green 3px solid;
+}
+
+.neutronStar {
+  grid-area: 'neutronStar';
+  grid-column: 4/5;
+  grid-row: 2/3;
+  border: green 3px solid;
 }
 
 .review1 {
