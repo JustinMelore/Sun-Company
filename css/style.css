@@ -103,12 +103,6 @@ td {
   text-align: center;
 }
 
-iFrame {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 nav {
   display: grid;
   grid-template-columns: 10% 20% 20% 20% 20% auto;
@@ -387,23 +381,6 @@ footer {
 #galleryTitle {
   font-size: 500%;
   text-align: center;
-  text-decoration: underline;
-}
-
-#galleryDescription {
-  font-size: 200%;
-  text-align: center;
-}
-
-.galleryImage {
-  width: 100%;
-  height: 100%;
-}
-
-#galleryBody {
-  background-image: url(../images/spaceBackground.jfif);
-  background-size: 100%;
-  font-family: 'Source Code Pro';
 }
 
 #gallery {
@@ -412,7 +389,8 @@ footer {
   grid-template-rows: auto;
   grid-template-areas:
     'Average massive giant white '
-    '. . . .';
+    'black . . . '
+    'review1 review2 review3 review4';
 }
 .Average {
   width: 100%;
@@ -452,4 +430,28 @@ footer {
   display: grid;
   grid-column: 1/2;
   grid-row: 2/2;
+}
+
+.review1 {
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.review2 {
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.review3 {
+  display: grid;
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.review4 {
+  display: grid;
+  grid-column: 4/5;
+  grid-row: 3/4;
 }
