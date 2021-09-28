@@ -317,6 +317,10 @@ footer {
 }
 
 /*SERVICES STYLING SECTION*/
+#servicesBody {
+  font-family: 'Source Code Pro';
+}
+
 #servicesHeader {
   display: flex;
   justify-content: left;
